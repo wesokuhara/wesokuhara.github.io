@@ -4,6 +4,8 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   background-color: #fefefe;
 }
 
