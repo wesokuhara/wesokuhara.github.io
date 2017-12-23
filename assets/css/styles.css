@@ -24,8 +24,8 @@ h5 {
 }
 
 .main {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .portrait {
@@ -71,6 +71,12 @@ h5 {
 
 .project {
   margin-bottom: 30px;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  background-color: ghostwhite;
 }
 
 .heart {
