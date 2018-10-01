@@ -10,7 +10,7 @@ body {
 }
 
 small {
-  font-size: 85%;
+  font-size: 87%;
 }
 
 h1,
@@ -57,6 +57,7 @@ h5 {
 }
 
 .work-section,
+.skills-section,
 .projects-section,
 .blog-section {
   padding-top: 30px;
