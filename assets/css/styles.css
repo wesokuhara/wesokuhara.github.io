@@ -9,6 +9,10 @@ body {
   background-color: #fefefe;
 }
 
+a {
+  color: #14939a;
+}
+
 small {
   font-size: 87%;
 }
@@ -30,7 +34,7 @@ h5 {
 
 .portrait {
   max-width: 240px;
-  border-radius: 8px;
+  border-radius: 14px;
   margin-bottom: 20px;
 }
 
