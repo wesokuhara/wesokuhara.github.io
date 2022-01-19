@@ -23,7 +23,7 @@ gtag('config', 'UA-107045069-1');
 
     <meta name="author" content="Wes Okuhara">
     <meta name="description" content="Wes Okuhara · Software Engineer, Photographer, and UCSD Alumnus.">
-    <meta itemprop="name" content="wesokuhara.com"/>
+    <meta itemprop="name" content="wesokuhara.github.io"/>
     <meta itemprop="description" content="Wes Okuhara · Software Engineer, Photographer, and UCSD Alumnus."/>
     <title>Wes Okuhara</title>
 
@@ -34,65 +34,82 @@ gtag('config', 'UA-107045069-1');
   </head>
 
   <body>
-    <main class="main">
+    <main class="py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <aside class="sidebar text-lg-right">
               <img src="assets/img/profile_picture.jpg" class="portrait" />
               <h1>Wes Okuhara</h1>
-              <p>📍 San Diego</p>
-              <ul class="sidebar__contactList">
-                <li><a href="mailto:wesokuhara@gmail.com"><i class="far fa-envelope sidebar__contactIcon"></i></a></li>
-                <li><a href="https://github.com/wesokuhara"><i class="fab fa-github sidebar__contactIcon"></i></a></li>
-                <li><a href="https://linkedin.com/in/wesokuhara"><i class="fab fa-linkedin-in sidebar__contactIcon"></i></a></li>
-                <li><a href="https://medium.com/@wesokuhara"><i class="fab fa-medium-m sidebar__contactIcon"></i></a></li>
+              <ul class="contact-list">
+                <li><a href="mailto:wesokuhara@gmail.com"><i class="far fa-envelope contact-icon"></i></a></li>
+                <li><a href="https://github.com/wesokuhara"><i class="fab fa-github contact-icon"></i></a></li>
+                <li><a href="https://linkedin.com/in/wesokuhara"><i class="fab fa-linkedin-in contact-icon"></i></a></li>
+                <li><a href="https://medium.com/@wesokuhara"><i class="fab fa-medium-m contact-icon"></i></a></li>
               </ul>
+              <p>📍 San Diego</p>
             </aside>
           </div>
 
           <div class="col-lg-6 offset-lg-1">
-            <section class="work-section">
+            <section>
               <h2>Work</h2>
-              <p>
-                Senior Software Engineer <small class="text-muted pl-2">MyCase, 2018-Present</small><br/>
-                Software Engineer <small class="text-muted pl-2">Tenzar, 2017-2018</small><br/>
-                Web Development Teaching Assistant <small class="text-muted pl-2">UCSD Extension, 2017-2018</small>
-              </p>
+              <ul class="job-list">
+                <li>
+                  Google<span class="item-details ml-2">Software Engineer, 2022 - Present</span>
+                </li>
+                <li>
+                  MyCase
+                  <ul class="job-position-list">
+                    <li>
+                      <span class="item-details">Senior Software Engineer, 2020 - 2022</span>
+                    </li>
+                    <li>
+                      <span class="item-details">Software Engineer, 2018 - 2020</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Tenzar<span class="item-details ml-2">Software Engineer, 2017 - 2018</span>
+                </li>
+                <li>
+                  UCSD Extension<span class="item-details ml-2">Full-stack Development TA, 2017 - 2018</span>
+                </li>
+              </ul>
             </section>
 
-            <section class="skills-section">
+            <section>
               <h2>Skills</h2>
               <p>
-                Languages <small class="text-muted pl-2">TypeScript, JavaScript, Ruby, Python, SQL, HTML, CSS, Java, C, C++</small><br/>
-                Technologies <small class="text-muted pl-2">React, Rails, Django, Node.js, Bootstrap</small><br/>
-                Tools <small class="text-muted pl-2">Git, AWS, Linux</small>
+                Languages<span class="item-details pl-2">TypeScript, JavaScript, Ruby, Python, SQL, HTML, CSS, Java, C, C++</span><br/>
+                Technologies<span class="item-details pl-2">React, Rails, Django, Node.js, Bootstrap</span><br/>
+                Tools<span class="item-details pl-2">Git, AWS, Linux</span>
               </p>
             </section>
 
-            <section class="projects-section">
+            <section>
               <h2>Projects</h2>
 
-              <article class="project">
+              <article class="mb-2">
                 <p>
-                  <a href="http://recy.cool">RecyCool</a> is a game that teaches K-8 students about pollution and the benefits of recycling.
+                  <a href="https://jacobsschool.ucsd.edu/news/release/1969">RecyCool</a> is a game that teaches K-8 students about pollution and the benefits of recycling.
                   I led full-stack development and created a leaderboard where schools can compete via a points-based leaderboard.
                   <br/>
-                  <small class="text-muted">Unity, C#, Node.js, Express, MongoDB</small>
+                  <span class="item-details">Unity, C#, Node.js, Express, MongoDB</span>
                 </p>
               </article>
 
-              <article class="project">
+              <article class="mb-2">
                 <p>
                   <a href="https://youtu.be/dXsljRY6eiI">Tunely</a> is an iOS app for creating collaborative playlists and streaming music.
                   I integrated websockets and hosted the backend on AWS EC2.
                   <br/>
-                  <small class="text-muted">Swift, Spotify API, Node.js, Express, MongoDB</small>
+                  <span class="item-details">Swift, Spotify API, Node.js, Express, MongoDB</span>
                 </p>
               </article>
             </section>
 
-            <section class="blog-section">
+            <section>
               <h2>Blog</h2>
               <p>
                 <a href="https://medium.com/@wesokuhara">Follow my thoughts on Medium</i></a>.
@@ -102,7 +119,5 @@ gtag('config', 'UA-107045069-1');
         </div>
       </div>
     </main>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   </body>
 </html>

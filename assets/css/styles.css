@@ -1,3 +1,9 @@
+:root {
+  --heading-color: #34495e;
+  --link-color: #14939a;
+  --list-connector-color: #e0e0e0;
+}
+
 html,
 body {
   margin: 0;
@@ -10,11 +16,7 @@ body {
 }
 
 a {
-  color: #14939a;
-}
-
-small {
-  font-size: 87%;
+  color: var(--link-color);
 }
 
 h1,
@@ -24,12 +26,12 @@ h4,
 h5 {
   font-family: 'Source Serif Pro', serif;
   font-weight: 600;
-  color: #34495e;
+  color: var(--heading-color);
 }
 
-.main {
-  padding-top: 20px;
-  padding-bottom: 20px;
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .portrait {
@@ -44,37 +46,54 @@ h5 {
   padding-right: 40px;
 }
 
-.sidebar__contactList {
+.contact-list {
   list-style: none;
-  margin: 0;
-  margin-top: 20px;
-  padding: 0;
+  padding-left: 0;
 }
 
-.sidebar__contactList > li {
+.contact-list > li {
   display: inline-block;
+}
+
+.contact-list > li:not(:first-child) {
   margin-left: 10px;
 }
 
-.sidebar__contactIcon {
+.contact-icon {
   font-size: 20px;
 }
 
-.work-section,
-.skills-section,
-.projects-section,
-.blog-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.item-details {
+  font-size: 90%;
+  color: var(--gray);
 }
 
-.project {
-  margin-bottom: 30px;
+.job-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-.footer {
-  padding: 30px;
-  text-align: center;
+.job-position-list {
+  margin-bottom: 6px;
+}
+
+.job-position-list > li {
+  position: relative;
+}
+
+.job-position-list > li:first-child {
+  margin-top: -4px;
+}
+
+.job-position-list > li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  height: calc(100% - 22px);
+  min-height: calc(32px - 22px);
+  top: 21px;
+  left: -15px;
+  width: 1px;
+  background-color: var(--list-connector-color);
 }
 
 .heart {
